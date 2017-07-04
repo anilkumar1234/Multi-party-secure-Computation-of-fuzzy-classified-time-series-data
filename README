@@ -1,0 +1,34 @@
+Project Name: Fuzzy Classification of time series data and Secure Multi Party Computation
+Contents:
+/fuzzy:
+	/programs:
+		fuzzy-classification.py
+		1nn.py
+		linf.py
+		secure-classification.py[*]
+	/UCR-data:
+		/single-user
+			test and training data files for fuzzy classification of single user time series data
+			Naming Convention:
+				Ex:ecg1==>training data of ECG five days
+					ecg2==>test data of ECG five days				
+		/multiple-user
+			test and training data files for secure fuzzy classification of multiple(2) user time series data
+			Naming Convention:
+				Ex:
+					ecga1==>training data of ECG five days of user A
+					ecga2==>test data of ECG five days of user A
+					
+					ecgb1==>training data of ECG five days of user B
+					ecgb2==>test data of ECG five days of user B
+	/README
+Instructions:
+1)Change your working directory into programs directory in fuzzy folder
+2)Open your console and type 'python secure-classification.py'
+3)Enter test and training data file names after requesting in console for both users
+4)Program will output the result after some time showing progress for work completion of every 1%
+5)Result(correct predictions) will be produced
+
+Requirements:
+1)Python(2.7)
+2)UCRdata
